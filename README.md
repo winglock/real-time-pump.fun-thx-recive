@@ -3,6 +3,7 @@
 First, install the necessary Python packages using pip:
 
 bash
+코드 복사
 pip install gql aiohttp python-dotenv
 2. Set Up Environment Variables
 To keep your API key secure, use environment variables.
@@ -11,16 +12,15 @@ a. Create a .env File
 In the root directory of your project, create a file named .env and add your Bitquery API key:
 
 env
+코드 복사
 BITQUERY_API_KEY=your_bitquery_api_key_here
 b. Add .env to .gitignore
 Ensure that the .env file is not pushed to GitHub by adding it to your .gitignore file. Create a .gitignore file in your project root (if it doesn't exist) and add the following line:
 
 gitignore
+코드 복사
 # Ignore environment variables file
 .env
-4. Set Up the Data Folder
-Decide on the subfolder where you want to save your JSON files. By default, the script uses a folder named data.
-
 Create the folder in your project directory:
 
 bash
